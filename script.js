@@ -6,18 +6,18 @@ taskForm.addEventListener('submit', (e)=> {
     e.preventDefault();
     const taskTitle = taskInput.value.trim();
     if(taskTitle === ""){
-        alert("Please enter task");
+        alert("Please add some defined task");
     }
     else{
         const listItem = document.createElement('li');
         listItem.innerHTML = taskTitle;
-        taskList.append(listItem);
+        taskList.insertBefore(listItem, taskList.firstChild);
         let span = document.createElement('span');
         span.innerHTML = `&times;`
         listItem.appendChild(span);
         taskInput.value = "";
         saveTaskData();
-    }
+    }    
 });
 
 taskList.addEventListener('click', (e)=> {
