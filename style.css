@@ -4,26 +4,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
-    background-color: whitesmoke;
-    overflow: hidden;
-}
-
-.nav-item {
-    margin: 0 15px;
-    list-style-type: none;
-}
-
-.nav-item a {
-    color: black;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: block;
-}
-.nav-item a:hover {
-    background-color: #575757;
-}
-
 .todoapp {    
     max-width: 500px;
     background-color: #e1e3e4;
